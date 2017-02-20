@@ -1,0 +1,51 @@
+﻿@model MvcMapping.ViewModels.ClienteViewModel
+
+@{
+   
+    ViewBag.Title = "Sorte do Dia";
+   
+}
+
+<hgroup class="title">
+   
+    <h1>@ViewBag.Title</h1>
+   
+</hgroup>
+<table>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.Nome)
+            @Html.DisplayFor(m => m.Nome)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.Sobrenome)
+
+            @Html.DisplayFor(m => m.Sobrenome)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.DataNascimento)
+            @Html.DisplayFor(m => m.DataNascimento)
+        </td>
+    </tr>
+    <tr>
+        <td>
+            @Html.LabelFor(m => m.Ativo)
+
+            @Html.DisplayFor(m => m.Ativo)
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+            @Html.LabelFor(m => m.NumeroDaSorte)
+
+            @Html.DisplayFor(m => m.NumeroDaSorte)
+
+        </td>
+    </tr>
+</table>
